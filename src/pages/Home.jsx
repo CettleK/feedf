@@ -24,7 +24,7 @@ function Home() {
     console.log("📡 Fetching news...");
 
     try {
-      const response = await fetch(`http://127.0.0.1:8000/news/?category=${category}`, { // 🔄 Pass category
+      const response = await fetch(`https://feedb-production.up.railway.app/news/?category=${category}`, { // 🔄 Pass category
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -54,7 +54,7 @@ function Home() {
     console.log("📡 Fetching health insights...");
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/news/insights", {
+      const response = await fetch("https://feedb-production.up.railway.app/news/insights", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -84,7 +84,7 @@ function Home() {
     }
   
     try {
-      const response = await fetch("http://127.0.0.1:8000/auth/track_click", {
+      const response = await fetch("https://feedb-production.up.railway.app/auth/track_click", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

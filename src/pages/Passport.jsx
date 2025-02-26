@@ -14,7 +14,7 @@ const Passport = () => {
       }
 
       try {
-        const response = await fetch("http://127.0.0.1:8000/user/", {
+        const response = await fetch("https://feedb-production.up.railway.app/user/", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

@@ -4,7 +4,7 @@ const Tracker = () => {
   const [trackerData, setTrackerData] = useState(null);
 
   useEffect(() => {
-      fetch("http://127.0.0.1:8000/user/tracker/", {
+      fetch("https://feedb-production.up.railway.app/user/tracker/", {
           headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`
           }

@@ -23,7 +23,7 @@ const Community = () => {
     }
   
     try {
-      const response = await fetch("http://127.0.0.1:8000/auth/track_click", {
+      const response = await fetch("https://feedb-production.up.railway.app/auth/track_click", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

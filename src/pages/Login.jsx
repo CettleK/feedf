@@ -17,7 +17,7 @@ function Login({ setIsAuthenticated  }) {
         console.log("🔐 Attempting login...");
 
         try {
-            const response = await fetch("http://127.0.0.1:8000/auth/login", {
+            const response = await fetch("https://feedb-production.up.railway.app/auth/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, password }),
@@ -48,7 +48,7 @@ function Login({ setIsAuthenticated  }) {
         console.log("📝 Attempting registration...");
 
         try {
-            const response = await fetch("http://127.0.0.1:8000/auth/register", {
+            const response = await fetch("https://feedb-production.up.railway.app/auth/register", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, password, full_name: fullName, fhir_id: fhirId }), // Fixed full_name reference
